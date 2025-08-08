@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: wing-hello-world
+spec:
+  containers:
+    - name: flask
+      image: registry.cn-beijing.aliyuncs.com/wing_share_images/wing-hello-world:latest  # 替换为实际镜像名
+      ports:
+        - containerPort: 5000  # 容器内业务监听端口

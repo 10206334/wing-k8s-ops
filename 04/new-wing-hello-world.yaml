@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: wing-hello-world
+  name: wing-hello-world
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: wing-hello-world
+  template:
+    metadata:
+      labels:
+        app: wing-hello-world
+    spec:
+      containers:
+      - image: registry.cn-beijing.aliyuncs.com/wing_share_images/wing-hello-world:v2
+        name: wing-hello-world
+
