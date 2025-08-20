@@ -1,0 +1,14 @@
+helm:
+  parameters:
+  - name: frontend.image
+    value: registry.cn-beijing.aliyuncs.com/wing_share_images/frontend
+    forcestring: true
+  - name: frontend.tag
+    value: "2682590"
+    forcestring: true
+  - name: backend.image
+    value: registry.cn-beijing.aliyuncs.com/wing_share_images/backend
+    forcestring: true
+  - name: backend.tag
+    value: "2682590"
+    forcestring: true

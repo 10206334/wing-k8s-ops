@@ -1,0 +1,16 @@
+frontend:
+  image: registry.cn-beijing.aliyuncs.com/wing_share_images/frontend
+  tag: '1276e23'
+  autoscaling:
+    averageUtilization: 90
+backend:
+  image: registry.cn-beijing.aliyuncs.com/wing_share_images/backend
+  tag: '1276e23'
+  autoscaling:
+    averageUtilization: 90
+database:
+  enabled: true
+  uri: pg-service
+  username: postgres
+  password: postgres
+  

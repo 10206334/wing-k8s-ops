@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: run-every-minute
+spec:
+  schedule: "* * * * *"  # 每分钟执行一次
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: cronjob
+            image: registry.cn-beijing.aliyuncs.com/wing_share_images/busybox:latest
+            command:
+            - /bin/sh
+            - -c
+            - echo "Hello World at $(date)"  # 输出当前时间便于验证
+          restartPolicy: OnFailure  # 关键：Job必须指定此策略（Never或OnFailure）
+
