@@ -1,3 +1,0 @@
-frontend:
-  image: registry.cn-beijing.aliyuncs.com/wing_share_images/frontend
-  tag: latest-env
