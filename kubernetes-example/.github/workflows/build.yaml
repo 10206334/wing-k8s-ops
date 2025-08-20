@@ -6,7 +6,7 @@ on:
       - "main"
 
 env:
-  DOCKERHUB_USERNAME: 10206334@qq.com 
+  DOCKERHUB_USERNAME: dockerofzzy 
 
 jobs:
   docker:
